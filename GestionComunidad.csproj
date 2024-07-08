@@ -1,0 +1,63 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <PlatformTarget>x64</PlatformTarget>
+    <ApplicationIcon>Images\hipoIco.ico</ApplicationIcon>
+    <AssemblyVersion>0.0.0.1</AssemblyVersion>
+    <FileVersion>0.0.0.1</FileVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\CINTILLO.png" />
+    <None Remove="Images\ColoresCintillo.JPG" />
+    <None Remove="Images\icon.ico" />
+    <None Remove="Images\LOGO-BDV.png" />
+    <None Remove="Images\main.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Images\hipoIco.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ArrayToExcel" Version="2.4.5" />
+    <PackageReference Include="Dapper" Version="2.0.151" />
+    <PackageReference Include="FontAwesome.Sharp" Version="6.3.0" />
+    <PackageReference Include="MaterialDesignThemes" Version="4.9.0" />
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies.net45" Version="1.0.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="System.Data.SQLite.Core" Version="1.0.118" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\CINTILLO.png" />
+    <Resource Include="Images\ColoresCintillo.JPG" />
+    <Resource Include="Images\icon.ico" />
+    <Resource Include="Images\LOGO-BDV.png" />
+    <Resource Include="Images\main.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>
