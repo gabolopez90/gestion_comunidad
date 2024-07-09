@@ -4,7 +4,7 @@ Sistema de gestión integral para la comunidad Altagracia en Acción como proyec
 
 ## Módulo BCV
 
-![bcv](./Images/BCV.png)
+![bcv](./Images/BCV1.png)
 
 Para ingresar la información de la tasa del día del Banco Central de Venezuela para el cálculo de los pagos
 
